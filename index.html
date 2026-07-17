@@ -1,193 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NORRIS GRAPHICS DESIGNZ</title>
-  <style>
-    body {
-      background: #000; /* FULL BLACK */
-      color: #ffd700; /* GOLD TEXT */
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      padding: 20px;
-      border-bottom: 3px solid #ffd700;
-    }
-    
-    .logo {
-      width: 120px;
-      height: auto;
-      margin: 20px auto;
-      display: block;
-      border-radius: 15px;
-      border: 3px solid #ffd700;
-    }
-    
-    .company-name {
-      color: #ffd700;
-      font-size: 32px;
-      font-weight: bold;
-      margin: 10px 0;
-      letter-spacing: 3px;
-    }
-    
-    nav {
-      margin: 20px 0;
-    }
-    
-    nav a {
-      color: #ffd700;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    
-    .hero {
-      padding: 40px 20px;
-    }
-    
-    .hero h1 {
-      color: #ffd700;
-      font-size: 28px;
-      line-height: 1.4;
-    }
-    
-    .hero p {
-      color: #ccc; /* Light gold/grey for subtext */
-      font-size: 15px;
-      padding: 0 10px;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 10px;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    
-    .btn-gold {
-      background: #ffd700;
-      color: #000;
-    }
-    
-    .btn-green {
-      background: #25D366;
-      color: #fff;
-    }
-    
-    section {
-      padding: 40px 20px;
-    }
-    
-    h2 {
-      color: #ffd700;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    
-    .service-box {
-      border: 2px solid #ffd700;
-      padding: 20px;
-      border-radius: 10px;
-      color: #ffd700;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      padding: 0 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .portfolio img {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid #ffd700;
-    }
-    
-    .contact {
-      background: #ffd700;
-      color: #000;
-      padding: 30px 20px;
-      margin-top: 30px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <title>NORRIS GRAPHICS DESIGNZ | Premium Graphic Design Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #000;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        text-align: center;
+      }
 
-  <!-- HEADER -->
-  <header>
-    <img src="logo.png" alt="Norris Graphics Logo" class="logo">
-    <h1 class="company-name">NORRIS GRAPHICS DESIGNZ</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+      header {
+        background: #111;
+        padding: 25px 20px;
+        border-bottom: 3px solid #ffd700;
+      }
+      .logo {
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        border: 3px solid #ffd700;
+        margin-bottom: 10px;
+      }
+      .company-name {
+        color: #ffd700;
+        font-size: 1.6em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Transforming ideas into<br>stunning designs</h1>
-    <p>We craft premium visual identities for businesses worldwide. Logos, Branding, Posters, Flyers.</p>
-    <a href="#portfolio" class="btn btn-gold">View Our Work</a>
-    <a href="https://wa.me/256704897195" class="btn btn-green">WhatsApp Us</a>
-  </section>
+      /* THIS IS THE NAV FIX */
+      nav a {
+        color: #ffd700 !important;
+        text-decoration: none;
+        margin: 0 8px;
+        font-weight: bold;
+        font-size: 0.95em;
+        display: inline-block;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
 
-  <!-- SERVICES -->
-  <section>
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-box">Logo Design</div>
-      <div class="service-box">Posters</div>
-      <div class="service-box">Flyers</div>
-      <div class="service-box">Business Cards</div>
-    </div>
-  </section>
+      .hero {
+        padding: 50px 20px;
+      }
+      .hero h1 {
+        color: #ffd700;
+        font-size: 2em;
+        line-height: 1.3;
+        margin-bottom: 15px;
+      }
+      .hero p {
+        color: #ddd;
+        font-size: 1em;
+        max-width: 600px;
+        margin: 0 auto 25px auto;
+      }
 
-  <!-- PORTFOLIO -->
-  <section id="portfolio">
-    <h2>View Our Work</h2>
-    <div class="portfolio">
-      <img src="work1.png" alt="Work 1">
-      <img src="work2.png" alt="Work 2">
-      <img src="work3.png" alt="Work 3">
-      <img src="work4.png" alt="Work 4">
-      <img src="work5.png" alt="Work 5">
-      <img src="work6.png" alt="Work 6">
-    </div>
-  </section>
+      .btn {
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 50px;
+        font-size: 1em;
+        display: inline-block;
+        margin: 8px;
+      }
+      .btn-primary {
+        background: #ffd700;
+        color: #000;
+      }
+      .btn-whatsapp {
+        background: #25d366;
+        color: white;
+      }
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h3 style="margin-top:0;">Contact Us</h3>
-    <p>Tel: 0704897195</p>
-    <p>All at affordable prices</p>
-  </section>
+      .services {
+        padding: 50px 20px;
+        background: #111;
+      }
+      .services h2 {
+        color: #ffd700;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .card {
+        background: #000;
+        border: 2px solid #ffd700;
+        border-radius: 10px;
+        padding: 20px 10px;
+      }
+      .card h3 {
+        color: #ffd700;
+      }
 
-</body>
-  </html>
+      footer {
+        padding: 25px;
+        background: #111;
+        border-top: 2px solid #ffd700;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Norris Graphics Logo" class="logo" />
+      <h1 class="company-name">NORRIS GRAPHICS DESIGNZ</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Transforming ideas into<br />stunning designs</h1>
+      <p>
+        We craft premium visual identities for businesses worldwide. Logos,
+        Branding, Posters, Flyers.
+      </p>
+      <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
+      <a href="https://wa.me/256704897495" class="btn btn-whatsapp"
+        >WhatsApp Us</a
+      >
+    </section>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card"><h3>Logo Design</h3></div>
+        <div class="card"><h3>Posters</h3></div>
+        <div class="card"><h3>Flyers</h3></div>
+        <div class="card"><h3>Business Cards</h3></div>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>NORRIS GRAPHICS DESIGNZ</strong></p>
+      <p>© 2026 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
