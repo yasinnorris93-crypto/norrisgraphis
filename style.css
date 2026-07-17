@@ -1,0 +1,40 @@
+body {
+  background-color: #000000; /* black background */
+  color: #ffd700; /* gold text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffd700; /* gold headings */
+}
+
+a {
+  color: #ffd700; /* gold links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffffff; /* white on hover */
+}
+
+img {
+  max-width: 200px;
+  border: 3px solid #ffd700; /* gold border around logo */
+  border-radius: 50%;
+}
+
+button,
+.whatsapp-btn {
+  background-color: #ffd700;
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
