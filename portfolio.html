@@ -1,0 +1,142 @@
+doctype html>
+<html>
+  <head>
+    <title>Portfolio - Norris Graphics Designz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+            body {
+              background: black;
+              margin: 0;
+              padding: 0;
+              font-family: Arial, sans-serif;
+            }
+
+            /* HEADER + NAV */
+            header {
+              background: #111;
+              padding: 20px;
+              text-align: center;
+              border-bottom: 2px solid #ffd700;
+            }
+            .company-name {
+              color: #ffd700;
+              font-size: 2em;
+              font-weight: bold;
+              margin: 0;
+            }
+            .tagline {
+              color: white;
+              font-size: 0.9em;
+              margin: 5px 0 15px 0;
+            }
+      <header>
+          <img src="images/logo.png" alt="Norris Graphics Logo" class="logo" />
+          <h1 class="company-name">NORRIS GRAPHICS DESIGNZ</h1>
+          <nav>
+              <a href="Index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a>
+          </nav>
+      </header>
+              text-decoration: underline;
+            }
+
+            /* MAIN CONTENT */
+            .container {
+              padding: 20px;
+            }
+            h1 {
+              color: #ffd700;
+              text-align: center;
+              font-size: 2.5em;
+              margin: 30px 0;
+            }
+
+            .portfolio-item {
+              margin: 40px 0 !important;
+              text-align: center;
+            }
+
+            .portfolio-img {
+              width: 100% !important;
+              height: 400px !important;
+              object-fit: cover !important;
+              border-radius: 12px !important;
+              border: 3px solid #ffd700 !important;
+              display: block !important;
+            }
+
+            .portfolio-title {
+              color: #ffd700;
+              font-size: 1.8em;
+              margin: 20px 0 10px 0;
+              font-weight: bold;
+            }
+
+            .portfolio-desc {
+              color: white;
+              font-size: 1.1em;
+              line-height: 1.6;
+              max-width: 600px;
+              margin: 0 auto;
+            }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER WITH COMPANY NAME + NAV -->
+    <header>
+      <h1 class="company-name">NORRIS GRAPHICS DESIGNZ</h1>
+      <p class="tagline">Design • Create • Inspire</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- PORTFOLIO CONTENT -->
+    <div class="container">
+      <h1>My Portfolio</h1>
+
+      <div class="portfolio-item">
+        <img
+          src="images/design1.jpg"
+          alt="Brand Design"
+          class="portfolio-img"
+        />
+        <h2 class="portfolio-title">Brand Identity Design</h2>
+        <p class="portfolio-desc">
+          Clean and bold branding for Norris Graphics. Turning ideas into
+          stunning visuals that grab attention.
+        </p>
+      </div>
+
+      <div class="portfolio-item">
+        <img
+          src="images/design2.jpg"
+          alt="Business Promo"
+          class="portfolio-img"
+        />
+        <h2 class="portfolio-title">Business Promotion</h2>
+        <p class="portfolio-desc">
+          Dealers in Logos, Posters, Flyers, and Business Cards. Professional
+          designs at affordable prices.
+        </p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="images/design3.jpg" alt="Design 3" class="portfolio-img" />
+        <h2 class="portfolio-title">Project Title 3</h2>
+        <p class="portfolio-desc">Add description for this design here.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="images/design4.jpg" alt="Design 4" class="portfolio-img" />
+        <h2 class="portfolio-title">Project Title 4</h2>
+        <p class="portfolio-desc">Add description for this design here.</p>
+      </div>
+    </div>
+  </body>
+</html>
